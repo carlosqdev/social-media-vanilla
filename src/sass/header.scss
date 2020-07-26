@@ -1,4 +1,5 @@
 .header {
+  background: var(--lightGray);
   .wrapper {
     padding-top: 0;
     padding-right: 1rem;
@@ -15,7 +16,7 @@
       margin-left: 0;
     }
     .copy_header {
-      color: var(--darkGrayishBlueText);
+      color: var(--gray);
       font-size: 12.5px;
       font-weight: bold;
       text-align: left;
@@ -29,7 +30,7 @@
       justify-content: space-between;
       margin-top: 1rem;
       .copy_mode {
-        color: var(--darkGrayishBlueText);
+        color: var(--gray);
         font-size: 12px;
         font-weight: bold;
         text-align: left;
@@ -42,7 +43,7 @@
       .switch {
         width: 45px;
         height: 23px;
-        background: var(--toggleLight);
+        background: var(--switch);
         border-radius: 1000px;
         border: none;
         position: relative;
@@ -59,7 +60,7 @@
           margin-bottom: 1.5px;
           margin-left: 1.5px;
           position: absolute;
-          background: #f1f1f1;
+          background: var(--switchSpinner);
           top: 0;
           left: unset;
           right: 0;
