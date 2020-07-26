@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carlos Quintero - social media dashboard.">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <!-- Styles -->
+  <link rel="stylesheet" href="./static/css/styles.css">
+  <title>Frontend Mentor | [Challenge Carlos Quintero]</title>
 </head>
 <body>
+  <section class="header">
+    <div class="wrapper">
+      <h1 class="title_h1">Social Media Dashboard</h1>
+      <p class="copy_header">Total Followers: 23,004</p>
+      <hr>
+      <div class="change_mode">
+        <p class="copy_mode">Dark Mode</p>
+        <button class="switch" id="switch">
+          <span class="mode_light"></span>
+          <span class="mode_dark"></span>
+        </button>
+      </div>
+    </div>
+  </section>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+  <section class="followers_view">
+    <div class="wrapper">
+      <div class="card_social_network">
+        <img class="img_social_network" src="./static/img/icon-facebook.svg" alt="facebook">
+        <p class="copy_username">@carlosqdev</p>
+        <p class="copy_count_followers">1987</p>
+        <p class="copy_description">Followers</p>
+        <div class="stadistic_crecein">
+          <img src="./static/img/icon-up.svg" alt="up">
+          <p class="copy_stadistic">12 Today</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
+  <div class="hidden">
   @nathanf
   1044
   Followers
@@ -78,10 +95,6 @@
   Total Views
   1407
   12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
 </body>
 </html>
