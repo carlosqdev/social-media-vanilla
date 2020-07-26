@@ -181,6 +181,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.top-cards .card-today .copy_down {
+  color: var(--bright-red);
+}
 .top-cards .card-today img {
   margin-right: 5px;
 }
