@@ -26,14 +26,15 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  background-color: var(--veryPaleBlueTop);
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   padding: 0px;
   margin: 0px;
 }
 
-@import './header.scss';
-@import './followers_view.scss';
+@import "./header.scss";
+@import "./followers_view.scss";
 
 .hidden {
   display: none;
