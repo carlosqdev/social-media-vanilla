@@ -13,10 +13,14 @@
       padding-right: 1rem;
       padding-left: 1rem;
       margin-bottom: 1rem;
+
+      body.dark & {
+        background: var(--cardGrayDark);
+      }
       .top_container {
         display: flex;
         justify-content: space-between;
-        .copy {
+        .title_overview {
           color: var(--gray);
           font-weight: 700;
         }

@@ -14,11 +14,11 @@
   --baseColor: #1d2029;
   --switchSpinner: white;
   --switch: #5f616d;
-  --cardGrayDark: hsl(232, 19%, 15%);
-  --baseBackgroundDark: hsl(232, 19%, 15%);
+  --cardGrayDark: #252b43;
+  --baseBackgroundDark: #1d2029;
   --baseColorDark: white;
   --grayDark: #8088ad;
-  --lightGrayDark: #1d2029;
+  --lightGrayDark: #20222f;
   --cardTitleDark: #8088ad;
   --switchSpinnerDark: #282943;
   --switchDark1: #4796d2;
@@ -39,6 +39,7 @@ body {
   margin: 0px;
 }
 body.dark {
+  color: var(--baseColorDark);
   background-color: var(--baseBackgroundDark);
 }
 
@@ -169,6 +170,9 @@ body.dark .header {
   position: relative;
   margin-bottom: 1rem;
 }
+body.dark .top-cards .card {
+  background: var(--cardGrayDark);
+}
 .top-cards .card:before {
   content: "";
   height: 4px;
@@ -278,11 +282,14 @@ body.dark .header {
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
+body.dark .overview .wrapper .card {
+  background: var(--cardGrayDark);
+}
 .overview .wrapper .card .top_container {
   display: flex;
   justify-content: space-between;
 }
-.overview .wrapper .card .top_container .copy {
+.overview .wrapper .card .top_container .title_overview {
   color: var(--gray);
   font-weight: 700;
 }

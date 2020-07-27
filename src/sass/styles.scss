@@ -18,11 +18,11 @@
 
 
 // DarkMode
-  --cardGrayDark: hsl(232, 19%, 15%);
-  --baseBackgroundDark: hsl(232, 19%, 15%);
+  --cardGrayDark: #252b43;
+  --baseBackgroundDark: #1d2029;
   --baseColorDark: white;
   --grayDark: #8088ad;
-  --lightGrayDark: #1d2029;
+  --lightGrayDark: #20222f;
   --cardTitleDark: #8088ad;
   --switchSpinnerDark: #282943;
   --switchDark1: #4796d2;
@@ -45,6 +45,7 @@ body {
   margin: 0px;
 
   &.dark {
+    color: var(--baseColorDark);
     background-color: var(--baseBackgroundDark);
   }
 }
