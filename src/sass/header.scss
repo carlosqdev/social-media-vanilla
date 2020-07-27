@@ -107,3 +107,11 @@
     }
   }
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    .wrapper {
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
+  }
+}

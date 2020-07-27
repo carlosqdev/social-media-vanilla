@@ -132,6 +132,12 @@ body {
     margin-right: 1rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .header .wrapper {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
 .top-cards {
   position: relative;
   top: -80px;
@@ -235,6 +241,12 @@ body {
     font-size: 8px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .top-cards {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
 .overview {
   margin-top: -90px;
 }
@@ -312,6 +324,12 @@ body {
   .overview .wrapper .grid .grid_row .card .botton_container .card_today {
     margin-top: 15px;
     font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .overview .wrapper {
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 
