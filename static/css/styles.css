@@ -213,6 +213,7 @@ body {
   .top-cards {
     padding-right: 2rem;
     padding-left: 2rem;
+    top: -135px;
   }
   .top-cards .wrapper .grid {
     display: flex;
@@ -245,6 +246,7 @@ body {
   color: var(--gray);
 }
 .overview .wrapper .card {
+  border-radius: 3px;
   background: var(--cardGray);
   padding-top: 1rem;
   padding-right: 1rem;
@@ -278,6 +280,39 @@ body {
 }
 .overview .wrapper .card .botton_container .card_today .down {
   color: var(--bright-red);
+}
+
+@media screen and (min-width: 768px) {
+  .overview {
+    margin-top: -175px;
+  }
+  .overview .wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .overview .wrapper .grid .grid_row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .overview .wrapper .grid .grid_row .card {
+    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .overview .wrapper .grid .grid_row .card .top_container .copy {
+    font-size: 10px;
+  }
+  .overview .wrapper .grid .grid_row .card .top_container .img {
+    width: 20px;
+    height: 20px;
+  }
+  .overview .wrapper .grid .grid_row .card .botton_container .copy_number {
+    font-size: 25px;
+  }
+  .overview .wrapper .grid .grid_row .card .botton_container .card_today {
+    margin-top: 15px;
+    font-size: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
