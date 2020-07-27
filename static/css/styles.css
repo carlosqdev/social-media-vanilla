@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-  background: var(--lightGray);
+  background: red;
 }
 .header .wrapper {
   padding-top: 0;
@@ -186,6 +186,49 @@ body {
 }
 .top-cards .card-today img {
   margin-right: 5px;
+}
+
+.overview .wrapper {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.overview .wrapper .copy {
+  color: var(--gray);
+}
+.overview .wrapper .card {
+  background: var(--cardGray);
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.overview .wrapper .card .top_container {
+  display: flex;
+  justify-content: space-between;
+}
+.overview .wrapper .card .top_container .copy {
+  color: var(--gray);
+  font-weight: 700;
+}
+.overview .wrapper .card .top_container .img {
+  width: 25px;
+  height: 25px;
+}
+.overview .wrapper .card .botton_container {
+  display: flex;
+  justify-content: space-between;
+}
+.overview .wrapper .card .botton_container .copy_number {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+.overview .wrapper .card .botton_container .card_today {
+  color: var(--lime-green);
+  font-weight: 700;
+}
+.overview .wrapper .card .botton_container .card_today .down {
+  color: var(--bright-red);
 }
 
 .hidden {

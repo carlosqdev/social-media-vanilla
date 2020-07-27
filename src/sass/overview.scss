@@ -1,0 +1,44 @@
+.overview {
+  .wrapper {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    .copy {
+      color: var(--gray);
+    }
+    .card {
+      background: var(--cardGray);
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+      .top_container {
+        display: flex;
+        justify-content: space-between;
+        .copy {
+          color: var(--gray);
+          font-weight: 700;
+        }
+        .img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .botton_container {
+        display: flex;
+        justify-content: space-between;
+        .copy_number {
+          margin-top: 0;
+          font-size: 30px;
+          font-weight: 700;
+        }
+        .card_today {
+          color: var(--lime-green);
+          font-weight: 700;
+          .down {
+            color: var(--bright-red);
+          }
+        }
+      }
+    }
+  }
+}
