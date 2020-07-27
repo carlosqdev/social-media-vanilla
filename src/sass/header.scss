@@ -1,8 +1,9 @@
 .header {
-  background: red;
-// var(--lightGray);
+  height: 210px;
+  background: var(--lightGray);
+  border-radius: 0 0 12px 12px;
   .wrapper {
-    padding-top: 0;
+    padding-top: 1rem;
     padding-right: 1rem;
     padding-bottom: 0;
     padding-left: 1rem;
@@ -11,10 +12,7 @@
       font-weight: 700;
       text-align: left;
       line-height: 1.6;
-      margin-top: 1rem;
-      margin-right: 0;
-      margin-bottom: 0;
-      margin-left: 0;
+      margin: 0;
     }
     .copy_header {
       color: var(--gray);
@@ -84,6 +82,26 @@
           display: block;
           background: none;
           color: #fff;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    .wrapper {
+      padding-right: 2rem;
+      padding-left: 2rem;
+      display: flex;
+      justify-content: space-between;
+      .hidden_desktop {
+        display: none;
+      }
+      .change_mode {
+        justify-content: center;
+        .copy_mode {
+          margin-top: 5px;
+          margin-right: 1rem;
         }
       }
     }

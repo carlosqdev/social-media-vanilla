@@ -26,10 +26,12 @@ body {
 }
 
 .header {
-  background: red;
+  height: 210px;
+  background: var(--lightGray);
+  border-radius: 0 0 12px 12px;
 }
 .header .wrapper {
-  padding-top: 0;
+  padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: 0;
   padding-left: 1rem;
@@ -39,10 +41,7 @@ body {
   font-weight: 700;
   text-align: left;
   line-height: 1.6;
-  margin-top: 1rem;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
 }
 .header .wrapper .copy_header {
   color: var(--gray);
@@ -115,19 +114,41 @@ body {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .header .wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .wrapper .hidden_desktop {
+    display: none;
+  }
+  .header .wrapper .change_mode {
+    justify-content: center;
+  }
+  .header .wrapper .change_mode .copy_mode {
+    margin-top: 5px;
+    margin-right: 1rem;
+  }
+}
 .top-cards {
+  position: relative;
+  top: -80px;
   margin-top: 40px;
   margin-bottom: 3em;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 .top-cards .card {
+  width: 100%;
   border-radius: 8px;
   overflow: hidden;
   background: var(--cardGray);
   text-align: center;
   padding: 1.7em 0;
   position: relative;
+  margin-bottom: 1rem;
 }
 .top-cards .card:before {
   content: "";
@@ -188,6 +209,34 @@ body {
   margin-right: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .top-cards {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .top-cards .wrapper .grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-cards .wrapper .grid .card {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .top-cards .wrapper .grid .card .card-title {
+    font-size: 10px;
+  }
+  .top-cards .wrapper .grid .card .card-followers .card-followers-number {
+    font-size: 40px;
+  }
+  .top-cards .wrapper .grid .card .card-followers .card-followers-title {
+    font-size: 8px;
+  }
+}
+.overview {
+  margin-top: -90px;
+}
 .overview .wrapper {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -229,10 +278,6 @@ body {
 }
 .overview .wrapper .card .botton_container .card_today .down {
   color: var(--bright-red);
-}
-
-.hidden {
-  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

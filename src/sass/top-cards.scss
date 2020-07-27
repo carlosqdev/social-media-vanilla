@@ -1,15 +1,19 @@
 .top-cards {
+  position: relative;
+  top: -80px;
   margin-top: 40px;
   margin-bottom: 3em;
   padding-right: 1rem;
   padding-left: 1rem;
   .card {
+    width: 100%;
     border-radius: 8px;
     overflow: hidden;
     background: var(--cardGray);
     text-align: center;
     padding: 1.7em 0;
     position: relative;
+    margin-bottom: 1rem;
   }
   .card:before {
     content: "";
@@ -72,5 +76,34 @@
   }
   .card-today img {
     margin-right: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .top-cards {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    .wrapper {
+      .grid {
+        display: flex;
+        justify-content: space-between;
+        .card {
+          margin-right: 5px;
+          margin-left: 5px;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          .card-title {
+            font-size: 10px;
+          }
+          .card-followers {
+            .card-followers-number {
+              font-size: 40px;
+            }
+            .card-followers-title {
+              font-size: 8px;
+            }
+          }
+        }
+      }
+    }
   }
 }
