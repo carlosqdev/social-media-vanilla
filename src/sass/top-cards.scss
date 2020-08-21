@@ -18,6 +18,10 @@
     body.dark & {
       background: var(--cardGrayDark);
     }
+    body.dark &:hover {
+      transition: 0.5s ease all;
+      background: var(--cardGrayDarkHover);
+    }
   }
   .card:before {
     content: "";
@@ -27,6 +31,10 @@
     left: 0;
     right: 0;
     top: 0;
+  }
+  .card:hover {
+    transition: 0.5s ease all;
+    background: var(--cardGrayHover);
   }
   .card.facebook::before {
     background: var(--facebook);

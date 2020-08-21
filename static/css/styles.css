@@ -8,6 +8,7 @@
   --youTube: hsl(348, 97%, 39%);
   --gray: #5f616d;
   --cardGray: #f0f3fa;
+  --cardGrayHover: #dfe2e9;
   --lightGray: #f8f9fe;
   --cardTitle: #6f717e;
   --baseBackground: white;
@@ -15,6 +16,7 @@
   --switchSpinner: white;
   --switch: #5f616d;
   --cardGrayDark: #252b43;
+  --cardGrayDarkHover: #2b3250;
   --baseBackgroundDark: #1d2029;
   --baseColorDark: white;
   --grayDark: #8088ad;
@@ -173,6 +175,10 @@ body.dark .header {
 body.dark .top-cards .card {
   background: var(--cardGrayDark);
 }
+body.dark .top-cards .card:hover {
+  transition: 0.5s ease all;
+  background: var(--cardGrayDarkHover);
+}
 .top-cards .card:before {
   content: "";
   height: 4px;
@@ -181,6 +187,10 @@ body.dark .top-cards .card {
   left: 0;
   right: 0;
   top: 0;
+}
+.top-cards .card:hover {
+  transition: 0.5s ease all;
+  background: var(--cardGrayHover);
 }
 .top-cards .card.facebook::before {
   background: var(--facebook);
@@ -285,6 +295,10 @@ body.dark .top-cards .card {
 body.dark .overview .wrapper .card {
   background: var(--cardGrayDark);
 }
+body.dark .overview .wrapper .card:hover {
+  transition: 0.5s ease all;
+  background: var(--cardGrayDarkHover);
+}
 .overview .wrapper .card .top_container {
   display: flex;
   justify-content: space-between;
@@ -312,6 +326,10 @@ body.dark .overview .wrapper .card {
 }
 .overview .wrapper .card .botton_container .card_today .down {
   color: var(--bright-red);
+}
+.overview .wrapper .card:hover {
+  transition: 0.5s ease all;
+  background: var(--cardGrayHover);
 }
 
 @media screen and (min-width: 768px) {

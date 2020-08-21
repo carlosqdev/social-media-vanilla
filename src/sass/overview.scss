@@ -17,6 +17,10 @@
       body.dark & {
         background: var(--cardGrayDark);
       }
+      body.dark &:hover {
+        transition: 0.5s ease all;
+        background: var(--cardGrayDarkHover);
+      }
       .top_container {
         display: flex;
         justify-content: space-between;
@@ -45,6 +49,10 @@
           }
         }
       }
+    }
+    .card:hover {
+      transition: 0.5s ease all;
+      background: var(--cardGrayHover);
     }
   }
 }
